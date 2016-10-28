@@ -1,12 +1,11 @@
 # Tessel Hue Switch
-![Image](http://i.imgur.com/ZhqZ2rh.jpg)
-
 The purpose of this project is to encourage more use of Philips Hue functionality by creating a board with pre-set Hue options.
+![Image](http://i.imgur.com/ZhqZ2rh.jpg)
 
 ###The Issue
 I purchased a Philip Hue set over a year ago and found that after a month or so you rarely find yourself going to the app on your phone to make cool lights. Instead, the appeal goes away and you just flip the light switch on like you would with any lightbulb.
 
-####The Solution 
+###The Solution 
 A small circuit board with buttons, lights and switches mounted next to a light switch that can quickly make use of the Philips Hue without taking out your phone.
 
 ###Resources
