@@ -1,6 +1,5 @@
 # Tessel Hue Switch
 The purpose of this project is to encourage more use of Philips Hue functionality by creating a board with pre-set Hue options.
-![Image](http://i.imgur.com/ZhqZ2rh.jpg)
 
 ###The Issue
 I purchased a Philip Hue set over a year ago and found that after a month or so you rarely find yourself going to the app on your phone to make cool lights. Instead, the appeal goes away and you just flip the light switch on like you would with any lightbulb.
@@ -33,3 +32,5 @@ Originally I was under the assumption that in order to get this thing off the br
 
 ####Next Steps
 I now have a board with 4 pre-set buttons (blue, red, green & yellow) and a dimmer switch hooked up to my tessel running on the network using `tessel push` and powered by the outlet. The last step in this process is to build a box for it to live in and mount it next to the light switch. I am hoping to find a clear plastic to use for the frame to show off the wiring and intricacies. 
+
+![Image](http://i.imgur.com/ZhqZ2rh.jpg)
