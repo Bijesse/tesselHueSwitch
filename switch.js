@@ -55,6 +55,26 @@ board.on("ready", () => {
     );
   }
 
+    //defines scale on potentiometer for on board led
+    function dimmer(){
+      led.brightness(sensor.scaleTo(0, 255));
+    }
+
+    //defines scale on potentiometer for on light 1
+    function hueDim(){
+      request({
+        url: hueURL + "/lights/1/state",
+        method: 'PUT',
+        json: {"bri":sensor.scaleTo(0, 255)}
+      },
+      function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+          console.log(body);
+        }
+      }
+      );
+    }
+
 
 
 
