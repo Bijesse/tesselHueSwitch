@@ -25,6 +25,9 @@ board.on("ready", () => {
     var hueURL = "http://192.168.1.3/api/OGIOGrBPRyn1AutXp3tLkZFIbMETdMaUCIBBkCL7";
     //request({ url: url, method: 'PUT', json: {foo: "bar", woo: "car"}}, callback)
 
+    // Function calls to initiate light change
+
+
     //changes light state to on
     function lightOneOn(){
     request({
@@ -74,6 +77,68 @@ board.on("ready", () => {
       }
       );
     }
+
+    // Puts a green light request
+    function greenLight(){
+    request({
+      url: hueURL + "/lights/1/state",
+      method: 'PUT',
+      json: {"hue":25653}
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        console.log(body);
+      }
+    }
+    );
+  }
+
+    // Puts a blue light request
+    function blueLight(){
+    request({
+      url: hueURL + "/lights/1/state",
+      method: 'PUT',
+      json: {"hue":44827}
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        console.log(body);
+      }
+    }
+    );
+  }
+
+    // Puts a red light request
+    function redLight(){
+    request({
+      url: hueURL + "/lights/1/state",
+      method: 'PUT',
+      json: {"hue":64928}
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        console.log(body);
+      }
+    }
+    );
+  }
+
+    // Puts a yellow light request
+    function yellowLight(){
+    request({
+      url: hueURL + "/lights/1/state",
+      method: 'PUT',
+      json: {"hue":13942}
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        console.log(body);
+      }
+    }
+    );
+  }
+
+
 
 
 
