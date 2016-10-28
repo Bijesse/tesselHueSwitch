@@ -25,8 +25,24 @@ board.on("ready", () => {
     var hueURL = "http://192.168.1.3/api/OGIOGrBPRyn1AutXp3tLkZFIbMETdMaUCIBBkCL7";
     //request({ url: url, method: 'PUT', json: {foo: "bar", woo: "car"}}, callback)
 
-    // Function calls to initiate light change
+    // Initiate blue light change
+    blueButton.on("press", () => blueLed.on() && lightOneOn() && blueLight() && lightOneBright());
+    blueButton.on("release", () => blueLed.off());
 
+    // Initiate red light change
+    redButton.on("press", () => redLed.on() && lightOneOn() && redLight() && lightOneBright());
+    redButton.on("release", () => redLed.off());
+
+    // Initiate green light change
+    greenButton.on("press", () => greenLed.on() && lightOneOn() && greenLight() && lightOneBright());
+    greenButton.on("release", () => greenLed.off());
+
+    // Initiate yellow light change
+    yellowButton.on("press", () => yellowLed.on() && lightOneOn() && yellowLight() && lightOneBright());
+    yellowButton.on("release", () => yellowLed.off());
+
+    //potentiometer dimmer
+    sensor.on("change", () => { dimmer() && hueDim()
 
     //changes light state to on
     function lightOneOn(){
