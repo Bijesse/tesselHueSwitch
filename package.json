@@ -1,20 +1,23 @@
 {
   "name": "tesselHueSwitch",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "the purpose of this project is to encourage more use of Philips Hue functionality by creating a board with pre-set Hue options",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "johnny-five": "^1.0.0",
+    "pir": "^0.2.0",
+    "request": "^2.88.0",
+    "tessel-io": "^1.2.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bijesse/tesselHueSwitch.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Bijesse/tesselHueSwitch/issues"
-  },
-  "homepage": "https://github.com/Bijesse/tesselHueSwitch#readme"
+  "repository": "git://github.com/Bijesse/tesselHueSwitch.git",
+  "keywords": [
+    "Tessel"
+  ],
+  "license": "MIT",
+  "readme": "A bare bones Tessel 2 blinky script."
 }

@@ -34,3 +34,6 @@ Originally I was under the assumption that in order to get this thing off the br
 I now have a board with 4 pre-set buttons (blue, red, green & yellow) and a dimmer switch hooked up to my tessel running on the network using `tessel push` and powered by the outlet. The last step in this process is to build a box for it to live in and mount it next to the light switch. I am hoping to find a clear plastic to use for the frame to show off the wiring and intricacies. 
 
 ![Image](http://i.imgur.com/ZhqZ2rh.jpg)
+
+## Update Nov 3 2018
+The original script from 2016 has been updated for my new apartment. Each button has been updated to a new feature. The most recent file is `room-all.js` Next I am planning to incorpoarate a motion sensor.
