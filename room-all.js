@@ -31,7 +31,7 @@ board.on("ready", function() {
   });
 */
 
-  var hueURL = "http://192.168.0.3/api/7vO9zk1JtTHcbS58c7ZhHECpsxH62coI7gnZwT4J"
+  var hueURL = "http://192.168.0.5/api/7vO9zk1JtTHcbS58c7ZhHECpsxH62coI7gnZwT4J"
  
   // Lights 5 6 7 8 to off: Blue Button
   buttonAllOff.on("press", () =>  lightFiveOff());
@@ -45,64 +45,64 @@ board.on("ready", function() {
   // Lights 5 6 7 8 to Sun: Red Button
   buttonSun.on("press", () =>  lightFiveOn());
   buttonSun.on("press", () =>  lightSixOn());
-  buttonSun.on("press", () =>  lightSevenOn());
   buttonSun.on("press", () =>  lightEightOn());
   buttonSun.on("press", () =>  lightFiveBright());
   buttonSun.on("press", () =>  lightSixBright());
-  buttonSun.on("press", () =>  lightSevenBright());
   buttonSun.on("press", () =>  lightEightBright());
+  buttonSun.on("press", () =>  lightSevenOn());
+  buttonSun.on("press", () =>  lightSevenBright());
   buttonSun.on("press", () =>  ledSun.on());
 
   buttonSun.on("release", () => lightFiveSunHue());
   buttonSun.on("release", () => lightSixSunHue());
-  buttonSun.on("release", () => lightSevenSunHue());
   buttonSun.on("release", () => lightEightSunHue());
   buttonSun.on("release", () => lightFiveSunSat());
   buttonSun.on("release", () => lightSixSunSat());
-  buttonSun.on("release", () => lightSevenSunSat());
   buttonSun.on("release", () => lightEightSunSat());
+  buttonSun.on("release", () => lightSevenSunHue());
+  buttonSun.on("release", () => lightSevenSunSat());
   buttonSun.on("release", () => ledSun.off());
 
   // Lights 5 6 7 8 to Starlight: Green Button
   buttonStar.on("press", () =>  lightFiveOn());
   buttonStar.on("press", () =>  lightSixOn());
-  buttonStar.on("press", () =>  lightSevenOn());
   buttonStar.on("press", () =>  lightEightOn());
   buttonStar.on("press", () =>  lightFiveStarBright());
-  buttonStar.on("press", () =>  lightSixStarBright());
-  buttonStar.on("press", () =>  lightSevenStarBright());
+  buttonStar.on("press", () =>  lightSixStarBright()); 
   buttonStar.on("press", () =>  lightEightStarBright());
+  buttonStar.on("press", () =>  lightSevenOn());
+  buttonStar.on("press", () =>  lightSevenStarBright());
   buttonStar.on("press", () =>  ledStar.on());
 
   buttonStar.on("release", () => lightFiveStarHue());
-  buttonStar.on("release", () => lightSixStarHue());
-  buttonStar.on("release", () => lightSevenStarHue());
+  buttonStar.on("release", () => lightSixStarHue()); 
   buttonStar.on("release", () => lightEightStarHue());
   buttonStar.on("release", () => lightFiveStarSat());
   buttonStar.on("release", () => lightSixStarSat());
-  buttonStar.on("release", () => lightSevenStarSat());
   buttonStar.on("release", () => lightEightStarSat());
+  buttonStar.on("release", () => lightSevenStarHue());
+  buttonStar.on("release", () => lightSevenStarSat());
   buttonStar.on("release", () => ledStar.off());
 
   // Lights 5 6 7 8 to Spring Blossom: Yellow Button
   buttonSpring.on("press", () =>  lightFiveOn());
   buttonSpring.on("press", () =>  lightSixOn());
-  buttonSpring.on("press", () =>  lightSevenOn());
   buttonSpring.on("press", () =>  lightEightOn());
   buttonSpring.on("press", () =>  lightFiveSpringBright());
   buttonSpring.on("press", () =>  lightSixSpringBright());
-  buttonSpring.on("press", () =>  lightSevenSpringBright());
   buttonSpring.on("press", () =>  lightEightSpringBright());
+  buttonSpring.on("press", () =>  lightSevenOn());
+  buttonSpring.on("press", () =>  lightSevenSpringBright());
   buttonSpring.on("press", () =>  ledSpring.on());
 
   buttonSpring.on("release", () => lightFiveSpringHue());
   buttonSpring.on("release", () => lightSixSpringHue());
-  buttonSpring.on("release", () => lightSevenSpringHue());
   buttonSpring.on("release", () => lightEightSpringHue());
   buttonSpring.on("release", () => lightFiveSpringSat());
   buttonSpring.on("release", () => lightSixSpringSat());
-  buttonSpring.on("release", () => lightSevenSpringSat());
   buttonSpring.on("release", () => lightEightSpringSat());
+  buttonSpring.on("release", () => lightSevenSpringHue());
+  buttonSpring.on("release", () => lightSevenSpringSat());
   buttonSpring.on("release", () => ledSpring.off());
 /*
   // Lights 5 6 8 to bright
@@ -468,7 +468,7 @@ board.on("ready", function() {
   request({
       uri: hueURL + "/lights/8/state/",
       method: 'PUT',
-      json: {"bri": 100}
+      json: {"bri": 90}
   },
   function (error, response, body) {
       if (!error && response.statusCode == 200) {
@@ -580,7 +580,7 @@ board.on("ready", function() {
   request({
       uri: hueURL + "/lights/8/state/",
       method: 'PUT',
-      json: {"sat": 135}
+      json: {"sat": 175}
   },
   function (error, response, body) {
       if (!error && response.statusCode == 200) {
@@ -708,7 +708,7 @@ board.on("ready", function() {
   request({
       uri: hueURL + "/lights/8/state/",
       method: 'PUT',
-      json: {"hue": 44681}
+      json: {"hue": 44077}
   },
   function (error, response, body) {
       if (!error && response.statusCode == 200) {
@@ -764,7 +764,7 @@ board.on("ready", function() {
   request({
       uri: hueURL + "/lights/8/state/",
       method: 'PUT',
-      json: {"sat": 103}
+      json: {"sat": 175}
   },
   function (error, response, body) {
       if (!error && response.statusCode == 200) {
