@@ -28,7 +28,7 @@ The next step in this project was to take out the Johnny-Five inventors kit and 
 I got the circuit up and running and immediately posted [this video](https://twitter.com/Bijesse/status/771714092625190912) to Twitter.
 
 #### Step 3: Permanent prototyping
-Originally I was under the assumption that in order to get this thing off the breadboard I was going to have to print a circuit board. However, I have done this in 6 years and lack the space/capacity for a ferric acid bath in my apartment. That's when I learned about [solderable breadboards](https://www.amazon.com/s/ref=nb_sb_ss_c_1_11?url=search-alias%3Daps&field-keywords=solderable+breadboard&sprefix=solderable+%2Caps%2C421) and permanent prototyping. 
+Originally I was under the assumption that in order to get this thing off the breadboard I was going to have to print a circuit board. However, I have not done this in 6 years and lack the space/capacity for a ferric acid bath in my apartment. That's when I learned about [solderable breadboards](https://www.amazon.com/s/ref=nb_sb_ss_c_1_11?url=search-alias%3Daps&field-keywords=solderable+breadboard&sprefix=solderable+%2Caps%2C421) and permanent prototyping. 
 
 #### Next Steps
 I now have a board with 4 pre-set buttons (blue, red, green & yellow) and a dimmer switch hooked up to my tessel running on the network using `tessel push` and powered by the outlet. The last step in this process is to build a box for it to live in and mount it next to the light switch. I am hoping to find a clear plastic to use for the frame to show off the wiring and intricacies. 
@@ -36,4 +36,4 @@ I now have a board with 4 pre-set buttons (blue, red, green & yellow) and a dimm
 ![Image](http://i.imgur.com/ZhqZ2rh.jpg)
 
 ## Update Nov 3 2018
-The original script from 2016 has been updated for my new apartment. Each button has been updated to a new feature. The most recent file is `room-all.js` Next I am planning to incorpoarate a motion sensor.
+The original script from 2016 has been updated for my new apartment. Each button has been updated to a new feature. The most recent file is `room-all.js` Next I am planning to incorporate a motion sensor.
